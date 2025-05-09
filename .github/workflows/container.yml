@@ -2,7 +2,7 @@ name: Build & publish alertmanager‑ntfy
 on:
   push:
     branches: [master]
-    paths: ["Dockerfile", "**/*.go"]
+    paths: ["Dockerfile", "**/*.go", ".github/workflows/container.yml"]
   workflow_dispatch:
 
 permissions:
