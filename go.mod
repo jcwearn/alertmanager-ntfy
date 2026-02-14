@@ -7,7 +7,7 @@ require (
 	github.com/fatih/structs v1.1.0
 	github.com/gin-contrib/zap v0.1.0
 	github.com/gin-gonic/gin v1.8.1
-	github.com/knadh/koanf v1.4.4
+	github.com/knadh/koanf/v2 v2.3.2
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/spf13/pflag v1.0.5
 	go.uber.org/zap v1.24.0
