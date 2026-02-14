@@ -3,14 +3,14 @@ module github.com/alexbakker/alertmanager-ntfy
 go 1.19
 
 require (
-	github.com/PaesslerAG/gval v1.2.1
+	github.com/PaesslerAG/gval v1.2.4
 	github.com/fatih/structs v1.1.0
-	github.com/gin-contrib/zap v0.1.0
-	github.com/gin-gonic/gin v1.8.1
-	github.com/knadh/koanf v1.4.4
+	github.com/gin-contrib/zap v0.2.0
+	github.com/gin-gonic/gin v1.11.0
+	github.com/knadh/koanf v1.5.0
 	github.com/mitchellh/copystructure v1.2.0
-	github.com/spf13/pflag v1.0.5
-	go.uber.org/zap v1.24.0
+	github.com/spf13/pflag v1.0.10
+	go.uber.org/zap v1.27.1
 )
 
 require (
