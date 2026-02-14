@@ -8,12 +8,6 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@c5a866b6ab867e88becbed4467b93592bce69f8a # v21
         with:
           diagnostic-endpoint:
-      - name: Update flake inputs
-        run: |
-          nix flake update
-          echo "=== FLAKE_LOCK_START ==="
-          cat flake.lock
-          echo "=== FLAKE_LOCK_END ==="
       - name: Build
         run: |
           nix build --print-build-logs
