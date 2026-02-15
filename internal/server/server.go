@@ -194,7 +194,7 @@ func (s *Server) forwardAlert(logger *zap.Logger, alert *alertmanager.Alert) err
 	if err != nil {
 		return fmt.Errorf("http request: %w", err)
 	}
-	defer res.Body.Close()
+	defer func() { _ = res.Body.Close() }()
 
 	if res.StatusCode < 200 || res.StatusCode >= 300 {
 		return fmt.Errorf("http %d, %s", res.StatusCode, http.StatusText(res.StatusCode))

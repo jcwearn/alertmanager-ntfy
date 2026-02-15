@@ -13,6 +13,11 @@
       "description": "Group GitHub Actions updates together",
       "matchManagers": ["github-actions"],
       "groupName": "github-actions"
+    },
+    {
+      "description": "Auto-label Renovate PRs for automated patch releases",
+      "matchManagers": ["gomod", "github-actions", "dockerfile"],
+      "addLabels": ["release:patch"]
     }
   ]
 }
